@@ -28,7 +28,6 @@ void setup ()
 public void setMines()
 {
   
-  System.out.println(numMines + " " + NUM_ROWS + " " + NUM_COLS);
   for(int j = 0; j <numMines; j++){  
      int row = (int)(Math.random()* (NUM_ROWS));
      int col = (int)(Math.random()* (NUM_COLS));
@@ -82,7 +81,7 @@ public void displayLosingMessage()
          for(int n = 0; n < NUM_COLS; n++)
            buttons[i][n].myLabel = "";
            
-          System.out.println("you lose");
+
           buttons[1][3].myLabel = "Y";
           buttons[1][4].myLabel = "O";
           buttons[1][5].myLabel = "U";
